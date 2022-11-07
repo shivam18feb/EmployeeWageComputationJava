@@ -5,8 +5,8 @@ public class EmployeeWageWelcome {
 		
 		System.out.println(" Welcome to Employee Wage Computation Program"); // Master Branch  
 		EmployeeWage emp = new EmployeeWage();
-		double empCheck = Math.floor(Math.random()*10) % 2;
-		double empType = Math.floor(Math.random()*10) % 2;
+		int empCheck = (int)(Math.random()*10) % 2;
+		int empType = (int) (Math.random()*10) % 2;
 		
 		if(emp.checkIsPresent(empCheck)) {
 			emp.calcDailyEmpWage(empType);
